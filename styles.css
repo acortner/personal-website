@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+.main-page {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    margin-top: 130px;
+    z-index: 2;
+}
+
+.main-page h1 {
+    font-weight: 200;
+    font-size: 48px;
+    display: none;
+}
+
+.main-page p {
+    font-weight: 200;
+    font-size: 24px;
+    display: none;
+}
+
+.main-page a {
+    cursor: pointer;
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 10px 20px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0);
+    color: black;
+    position: relative;
+    vertical-align: middle;
+    transition: color 0.25s;
+    text-decoration: none;
+}
+
+.main-page a:before, .main-page a:after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.main-page a:before {
+    top: 0;
+    left: 0;
+}
+
+.main-page a:after {
+    bottom: 0;
+    right: 0;
+}
+
+.main-page a:hover {
+    color: #8fd3f4;
+}
+
+.main-page a:hover:before, .main-page a:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+.main-page a:hover:before {
+    border-top-color: #8fd3f4;
+    border-right-color: #8fd3f4;
+    transition:
+      width 0.1s ease-out,
+      height 0.1s ease-out 0.1s;
+}
+
+.main-page a:hover:after {
+    border-bottom-color: #8fd3f4;
+    border-left-color: #8fd3f4;
+    transition:
+      border-color 0s ease-out 0.2s,
+      width 0.1s ease-out 0.2s,
+      height 0.1s ease-out 0.3s;
+}
+
+.platforms li {
+    font-weight: 200;
+    font-size: 16px;
+    margin: 15px;
+    padding: 5px 20px !important;
+    display: none;
+    opacity: 0;
+}
+
+.platforms {
+    list-style-type: none;
+}
+
+.resume {
+    width: 80%;
+    margin: auto;
+    display: none;
+}
+
+.resume .header {
+    text-align: center !important;
+    margin-top: 40px !important;
+}
+
+.resume #name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 44px;
+    margin: 20px;
+}
+
+.resume #tagline {
+    font-size: 20px;
+    margin-bottom: 40px;
+    text-align: center !important;
+}
+
+.resume p, .resume li {
+    font-weight: 300;
+    text-align: left;
+}
+
+.resume a {
+    color: black;
+    text-decoration: none;
+    padding-right: 2px;
+    padding-left: 2px;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 100%;
+    transition: background-size 0.2s ease-in;
+}
+
+.resume a:hover {
+    background-size: 100% 88%;
+}
+
+.resume h2 {
+    text-transform: uppercase;
+    text-align: left;
+    position: relative;
+    font-weight: 300;
+    margin: 0;
+}
+
+.resume ul {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+#back {
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 50px;
+    float: left;
+    transition: all 0.25s;
+    margin-top: 25px;
+    position: absolute;
+}
+
+.design-page #back {
+    margin-top: 0px !important;
+}
+
+#back:hover #left {
+    border: 0.2em solid #8fd3f4;
+}
+
+#back:hover #left:after {
+    border-top: 0.2em solid #8fd3f4;
+    border-right: 0.2em solid #8fd3f4;
+}
+
+#left {
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    border: 0.2em solid black;
+    border-radius: 50%;
+    margin-right: 1.5em;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+#left:after {
+    content: '';
+	display: inline-block;
+    margin-top: 1.25em;
+    margin-left: 0.5em;
+    width: 1.2em;
+    height: 1.2em;
+    border-top: 0.2em solid black;
+    border-right: 0.2em solid black;
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.design-page #left:after {
+    margin-left: 1.5em !important;
+}
+
+.design-page {
+    width: 80%;
+    margin: auto;
+}
+
+.design-page .header {
+    margin-top: 60px;
+}
+
+#design-title {
+    text-align: center;
+    margin: auto;
+    font-weight: 200;
+    font-size: 50px;
+}
+
+#blurb {
+    margin-top: 50px;
+    font-size: 20;
+    font-weight: 200;
+}
+
+.section h2 {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.dsgn-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#dsgn {
+    background-color: rgba(143, 211, 244, 0);
+    transition: background-color 0.5s ease;
+}
+
+#dsgn:hover {
+    background-color: rgba(143, 211, 244, 0.3);
+}
+
+#dsgn img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    top: 0;
+    cursor:pointer;
+}
+
+@media only screen and (min-width: 1200px) {
+    #dsgn {
+      width: 25%;
+    }
+}
+  
+@media only screen and (max-width: 1200px) {
+    #dsgn {
+      width: 33.3333%;
+    }
+}
+  
+@media only screen and (max-width: 900px) {
+    #dsgn {
+      width: 50%;
+    }
+}
+  
+@media only screen and (max-width: 600px) {
+    #dsgn {
+      width: 100%;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+  
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+  /* Add Animation */
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+  
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+  
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+  
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #8fd3f4;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 600px){
+    .modal-content {
+      width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .modal-content {
+      width: 600px;
+    }
+}
