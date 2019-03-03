@@ -206,7 +206,7 @@ body {
     transform: rotate(-135deg);
 }
 
-.design-page #left:after {
+.design-page #left:after, .about-me #left:after {
     margin-left: 1.5em !important;
 }
 
@@ -370,4 +370,25 @@ body {
     .modal-content {
       width: 600px;
     }
+}
+
+.about-me {
+    width: 80%;
+    margin: auto;
+}
+
+.about-me h1 {
+    font-weight: 200;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 60px;
+}
+
+.about-me #back {
+    margin-top: 0px;
+}
+
+#prof-pic {
+    width: 100%;
+    max-width: 400px;
 }
