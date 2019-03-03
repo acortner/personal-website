@@ -389,6 +389,20 @@ body {
 }
 
 #prof-pic {
+    margin: auto;
+    text-align: center;
+}
+
+#prof-pic img {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
+}
+
+.bio {
+    font-weight: 200;
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
 }
