@@ -422,3 +422,9 @@ body {
 .about-me a:hover {
     background-size: 100% 88%;
 }
+
+#myModal #caption {
+    font-size: 36px;
+    margin-top: -50px;
+    margin-bottom: -90px;
+}
