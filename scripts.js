@@ -141,7 +141,7 @@ $(function() {
     $('#dsgn img').click(function() {
         $('#myModal').show();
         $('#modalImg').attr('src', this.src);
-        $('#dsgn #caption').html(this.alt);
+        $('#myModal #caption').html(this.alt);
     });
 });
 
