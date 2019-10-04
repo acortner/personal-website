@@ -9,7 +9,7 @@ body {
     margin: auto;
     position: relative;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 110px;
     z-index: 2;
 }
 
@@ -427,4 +427,39 @@ body {
     font-size: 36px;
     margin-top: -50px;
     margin-bottom: -90px;
+}
+
+.work-page {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.workvid {
+    text-align: center;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+#work-title {
+    text-align: center;
+    margin: auto;
+    font-weight: 200;
+    font-size: 50px;
+}
+
+.work-page #back {
+    margin-top: 0px !important;
+}
+
+.work-page .header {
+    margin-top: 60px;
+}
+
+.work-sect p {
+    font-weight: 200;
+    text-align: left !important;
+    font-size: 17px;
 }

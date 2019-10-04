@@ -4,10 +4,11 @@ $(function() {
     $('.main-page h1').fadeIn(500);
     $('#work').fadeIn(1000);
     $('#code').fadeIn(1500);
-    $('#design').fadeIn(2000);
-    $('#resume').fadeIn(2500);
-    $('#about-me').fadeIn(3000);
-    $('#connect').fadeIn(3500);
+    $('#front-end').fadeIn(2000);
+    $('#design').fadeIn(2500);
+    $('#resume').fadeIn(3000);
+    $('#about-me').fadeIn(3500);
+    $('#connect').fadeIn(4000);
 });
 
 $(function() {
@@ -124,6 +125,39 @@ $(function() {
 $(function() {
     $('.about-me #left').click(function() {
         $('.about-me')
+                .css('opacity', 1)
+                .slideUp(800)
+                .animate(
+                { opacity: '0' },
+                { queue: false, duration: 1000 });
+        setTimeout( function() { window.location = 'index.html' }, 1000 );
+    });
+});
+
+$(function() {
+    $('.work-page')
+                .css('opacity', 0)
+                .slideDown(1000)
+                .animate(
+                { opacity: '1' },
+                { queue: false, duration: 1000 });
+});
+
+$(function() {
+    $('#front-end').click(function() {
+        $('.main-page')
+                .css('opacity', 1)
+                .slideUp(800)
+                .animate(
+                { opacity: '0' },
+                { queue: false, duration: 1000 });
+        setTimeout( function() { window.location = 'work.html' }, 1000 );
+    });
+});
+
+$(function() {
+    $('.work-page #left').click(function() {
+        $('.work-page')
                 .css('opacity', 1)
                 .slideUp(800)
                 .animate(

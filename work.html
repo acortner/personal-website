@@ -1,0 +1,49 @@
+<head>
+  <title>Front-End</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="work-page">
+        <div class="header">
+            <div id="back"><span id="left"></span></div>
+            <h1 id="work-title">front-end</h1>
+            <p id="blurb">
+                Here is a more visual representation for some of the front-end work I have done. Most of the work was done with HTML and CSS, while some projects also involved JavaScript, R, and PHP.
+            </p>
+        </div>
+        <div class="section work-sect">
+            <h2>Remote Desktop Shiny Application</h2>
+            <p>This application was created so users would have a way to view the availability of the Remote Desktops within the ERISOne cluster in the Partners HealthCare network.</p>
+            <p>There are three python scripts in this repository. The <em>rd_caps.py</em> script creates a secure shell with every remote desktop and finds the maximum user capacity, then inserts this information into a SQL database. The <em>rd_usage.py</em> script similarly creates a secure shell with every desktop, and it sends a list of all the active users to a SQL database. This script is run in the server every 5 minutes as a cronjob to constantly update the application. Lastly, the <em>rd_data.py</em> takes all the infromation from the SQL database, and exports it into an easily-accessible JSON file for the R application to reference.</p>
+            <p>The R application is built using the Shiny library, which creates a clean and simple user interface with a <em>ui.R</em> file that lays out the elements similarly to HTML and a <em>server.R</em> file that handles the transfer of data from the JSON file into the UI. The video below shows the application being run from the server, featuring the live data, and it shows the simple interface as well as the responsiveness of the dashboard.</p>
+            <video class="workvid" controls>
+                <source src="videos/remote_desktop.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="section work-sect">
+            <h2>CS330 – Digital Fridge</h2>
+            <p>This application was created using HTML, CSS, and JavaScript using jQuery frameworks. It was built as the term project for a course in Human Computer Interaction. It is a basic prototype with no back-end infrastructure, designed to simply demonstrate an understanding of web-development and graphic design fundamentals.</p>
+            <p>I built this application along with a team of three others. This application went through several phases of prototyping before we arrived at our final design. The dataset in the application is static since it is stored as a JavaScript variable, but the list is mutable, so the items can be changed or deleted, as shown in the video below.</p>
+            <video class="workvid" controls>
+                <source src="videos/digital_fridge.mp4" type="video/mp4">
+            </video>
+            </div>
+        <div class="section work-sect">
+            <h2>Digital Health Review Image Map</h2>
+            <p>This image map was creating using exclusively HTML and CSS in order to function properly on the Partners IS website. It is a complex hierachy of HTML elements, all styled by CSS in order to give them specific shapes and colors.</p>
+            <p>The dynamic behavior of the page is all controlled by the CSS <em>hover</em> attribute.</p>
+            <video class="workvid" controls>
+                <source src="videos/dighealth.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="section work-sect">
+            <h2>LabArchives Image Map</h2>
+            <p>Similar to the previous image map, this image map is comprised solely of HTML and CSS, and it also includes SVG vectorized images in order to have the irregular arrow shapes. The rest of the shapes were created using CSS.</p>
+            <video class="workvid" controls>
+                <source src="videos/labarch.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</body>
