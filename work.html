@@ -15,7 +15,7 @@
         </div>
         <div class="section work-sect">
             <h2>Remote Desktop Shiny Application</h2>
-            <p>This application was created so users would have a way to view the availability of the Remote Desktops within the ERISOne cluster in the Partners HealthCare network.</p>
+            <p>This application was created so users would have a way to view the availability of the Remote Desktops within the ERISOne cluster in the Partners HealthCare network. To see the codebase, check out the <a href="https://github.com/acortner/remote_desktop_application" target="_blank">repository</a> on GitHub.</p>
             <p>There are three python scripts in this repository. The <em>rd_caps.py</em> script creates a secure shell with every remote desktop and finds the maximum user capacity, then inserts this information into a SQL database. The <em>rd_usage.py</em> script similarly creates a secure shell with every desktop, and it sends a list of all the active users to a SQL database. This script is run in the server every 5 minutes as a cronjob to constantly update the application. Lastly, the <em>rd_data.py</em> takes all the infromation from the SQL database, and exports it into an easily-accessible JSON file for the R application to reference.</p>
             <p>The R application is built using the Shiny library, which creates a clean and simple user interface with a <em>ui.R</em> file that lays out the elements similarly to HTML and a <em>server.R</em> file that handles the transfer of data from the JSON file into the UI. The video below shows the application being run from the server, featuring the live data, and it shows the simple interface as well as the responsiveness of the dashboard.</p>
             <video class="workvid" controls>
@@ -23,8 +23,8 @@
             </video>
         </div>
         <div class="section work-sect">
-            <h2>CS330 – Digital Fridge</h2>
-            <p>This application was created using HTML, CSS, and JavaScript using jQuery frameworks. It was built as the term project for a course in Human Computer Interaction. It is a basic prototype with no back-end infrastructure, designed to simply demonstrate an understanding of web-development and graphic design fundamentals.</p>
+            <h2 id="digfridge">CS330 – Digital Fridge</h2>
+            <p>This application was created using HTML, CSS, and JavaScript using jQuery frameworks. It was built as the term project for a course in Human Computer Interaction. It is a basic prototype with no back-end infrastructure, designed to simply demonstrate an understanding of web-development and graphic design fundamentals. Feel free to go check out the <a href="https://github.com/food-waste/digital-fridge" target="_blank">repository</a> on GitHub.</p>
             <p>I built this application along with a team of three others. This application went through several phases of prototyping before we arrived at our final design. The dataset in the application is static since it is stored as a JavaScript variable, but the list is mutable, so the items can be changed or deleted, as shown in the video below.</p>
             <video class="workvid" controls>
                 <source src="videos/digital_fridge.mp4" type="video/mp4">

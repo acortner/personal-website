@@ -129,7 +129,7 @@ body {
     text-align: left;
 }
 
-.resume a {
+.resume a, .work-page a {
     color: black;
     text-decoration: none;
     padding-right: 2px;
@@ -141,7 +141,7 @@ body {
     transition: background-size 0.2s ease-in;
 }
 
-.resume a:hover {
+.resume a:hover, .work-page a:hover {
     background-size: 100% 88%;
 }
 
