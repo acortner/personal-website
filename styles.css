@@ -248,16 +248,16 @@ body {
     justify-content: center;
 }
 
-#dsgn {
+.dsgn {
     background-color: rgba(143, 211, 244, 0);
     transition: background-color 0.5s ease;
 }
 
-#dsgn:hover {
+.dsgn:hover {
     background-color: rgba(143, 211, 244, 0.3);
 }
 
-#dsgn img {
+.dsgn img {
     width: 100%;
     height: auto;
     margin: auto;
@@ -266,25 +266,25 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-    #dsgn {
+    .dsgn {
       width: 25%;
     }
 }
   
 @media only screen and (max-width: 1200px) {
-    #dsgn {
+    .dsgn {
       width: 33.3333%;
     }
 }
   
 @media only screen and (max-width: 900px) {
-    #dsgn {
+    .dsgn {
       width: 50%;
     }
 }
   
 @media only screen and (max-width: 600px) {
-    #dsgn {
+    .dsgn {
       width: 100%;
     }
 }
