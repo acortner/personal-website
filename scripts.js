@@ -439,10 +439,7 @@ const getDesigns = (name) => {
     for (var i = 0; i < design_json[name].length; i++) {
         var design = design_json[name][i];
         var block = $("<div></div>").addClass("dsgn")
-        block.append("<img src=\"" + design.src + "\" alt=\"" + design.alt + "\">")
-        block.on('click', function(){
-            showModal(design.src, design.alt);
-        });
+        block.append("<img onclick=\"showModal(\'" + design.src + "\', \'" + design.alt + "\')\" src=\"" + design.src + "\" alt=\"" + design.alt + "\">")
         designs.append(block);
     }
     return designs;
