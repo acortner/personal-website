@@ -104,6 +104,7 @@ body {
     width: 80%;
     margin: auto;
     display: none;
+    max-width: 900px;
 }
 
 .resume .header {
