@@ -9,9 +9,9 @@ const resume_json = {
             "end": "Sep 2020",
             "responsibilities": [
                 "Developed canary test package for Resource Access Manager (RAM) team, using Python and Ruby scripts to run tests of services across regions.",
-                "Utilized Amazon Web Services (AWS) &mdash; e.g. CloudFormation, Lambda, IAM &mdash; to develop native AWS software.",
+                "Utilized Amazon Web Services (AWS) &mdash; e.g. CloudFormation, Lambda &mdash; to develop native AWS software.",
                 "Designed test structure using class inheritance to ease process of writing canary tests when onboarding new AWS services and resources to RAM.",
-                "Automated process of cutting and tickets and rolling back code changes when canary tests report failures."
+                "Automated process of cutting tickets and rolling back code changes when canary tests report failures."
             ]
         },
         {
@@ -24,7 +24,7 @@ const resume_json = {
                 "Designed website to bring attention to Chicago's local music scene and constructed front-end user interface for course project using ReactJS.",
                 "Conducted interviews with Chicagoans to gauge interest and problem areas for project.",
                 "Integrated website with remote database, storage, and hosting using Google Firebase.",
-                "Worked using agile model with a team of five to plan sprints and determine immediate and long term goals."
+                "•	Collaborated with team of five using agile model to plan sprints and determine immediate and long-term goals."
             ]
         },
         {
@@ -69,7 +69,7 @@ const resume_json = {
         },
         {
             "category": "Languages",
-            "examples": "English (Native), French (Proficient)"
+            "examples": "French (Proficient)"
         }
     ]
 }
