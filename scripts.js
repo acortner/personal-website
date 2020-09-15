@@ -32,7 +32,7 @@ const resume_json = {
             "location": "Somerville, MA",
             "role": "Web Development Intern",
             "start": "Jun 2018",
-            "end": "Aug 2018",
+            "end": "Aug 2019",
             "responsibilities": [
                 "Built, maintained, updated websites for internal use and technical support within the Partners network using Drupal and SharePoint web editors as well as HTML, CSS, JavaScript, and PHP.",
                 "Developed custom PHP modules and refined search engine for website using Linux.",
