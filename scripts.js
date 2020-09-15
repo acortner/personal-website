@@ -24,7 +24,7 @@ const resume_json = {
                 "Designed website to bring attention to Chicago's local music scene and constructed front-end user interface for course project using ReactJS.",
                 "Conducted interviews with Chicagoans to gauge interest and problem areas for project.",
                 "Integrated website with remote database, storage, and hosting using Google Firebase.",
-                "•	Collaborated with team of five using agile model to plan sprints and determine immediate and long-term goals."
+                "Collaborated with team of five using agile model to plan sprints and determine immediate and long-term goals."
             ]
         },
         {
